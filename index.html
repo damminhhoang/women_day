@@ -1,100 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="website icon" type="png" href="heart.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Úuuuu òaaaaaa</title>
     <style>
+        /* Thiết lập giao diện cho màn hình máy tính */
+        @media (min-width: 768px) {
+            /* Đặt các thuộc tính CSS cho giao diện máy tính ở đây */
+        }
+
+        /* Thiết lập giao diện cho màn hình điện thoại di động */
+        @media (max-width: 767px) {
+            /* Đặt các thuộc tính CSS cho giao diện điện thoại di động ở đây */
+        }
+
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap');
-        *{
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             background-image: url(bgr3.jpg);
             background-size: cover;
         }
-        .container{
+
+        .container {
             width: 100%;
             height: 100%;
             position: absolute;
         }
-        .toast{
+
+        .toast {
             width: 100%;
             height: 100%;
             position: absolute;
             background: rgba(250, 107, 205, 0.3);
         }
-        .toast .toast-container{
+
+        .toast .toast-container {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-top: 10%;
+            margin-top: 30%;
             gap: 10px;
         }
-        .toast .toast-container.active{
+
+        .toast .toast-container.active {
             transform: translateY(-300px);
         }
-        .toast .text1{
+
+        .toast .text1 {
             transition: 2s;
         }
-        .toast .text1 h1{
+
+        .toast .text1 h1 {
             font-family: 'Pacifico', cursive;
             font-size: 2.8em;
             visibility: hidden;
             animation: h1 2s forwards;
             animation-delay: 1s;
         }
-        @keyframes h1{
-            0%{
+
+        @keyframes h1 {
+            0% {
                 opacity: 0;
                 transform: translateY(-200px);
             }
-            100%{
+
+            100% {
                 opacity: 1;
                 visibility: visible;
                 transform: translateY(0);
             }
         }
-        .toast .text1.active{
+
+        .toast .text1.active {
             transform: translateY(-300px);
         }
-        .toast .text2{
+
+        .toast .text2 {
             transition: 2s;
         }
-        .toast .text2 h2{
+
+        .toast .text2 h2 {
             font-family: 'Pacifico', cursive;
             font-size: 1.2em;
             visibility: hidden;
             animation: h2 2s forwards;
             animation-delay: 2s;
         }
-        @keyframes h2{
-            0%{
+
+        @keyframes h2 {
+            0% {
                 opacity: 0;
                 transform: translateY(-250px);
             }
-            100%{
+
+            100% {
                 visibility: visible;
                 opacity: 1;
                 transform: translateY(0px);
             }
         }
-        .toast .text2.active{
+
+        .toast .text2.active {
             transform: translateY(-300px);
         }
-        .btn{
+
+        .btn {
             margin-top: 20px;
         }
-        .btn .button--yes{
-            left: 400px;
+
+        .btn .button--yes {
+            left: 50%;
             position: absolute;
             padding: 10px 20px;
             background: rgb(250, 68, 68);
@@ -103,69 +134,88 @@
             cursor: pointer;
             color: white;
             animation: yes 2s linear;
+            transform: translateX(-50%);
         }
-        @keyframes yes{
-            0%{
+
+        @keyframes yes {
+            0% {
                 opacity: 0;
                 transform: translateY(-350px);
             }
-            50%{
+
+            50% {
                 opacity: 1;
                 transform: translateY(0px) translateX(-20px) rotate(-30deg);
             }
-            55%{
+
+            55% {
                 opacity: 1;
                 transform: translateY(-10px) translateX(-10px) rotate(-15deg);
             }
-            60%{
+
+            60% {
                 opacity: 1;
                 transform: translateY(-20px) translateX(0px) rotate(0deg);
             }
-            65%{
+
+            65% {
                 opacity: 1;
                 transform: translateY(-10px) translateX(10px) rotate(15deg);
             }
-            70%{
+
+            70% {
                 opacity: 1;
                 transform: translateY(0px) translateX(20px) rotate(30deg);
             }
-            75%{
+
+            75% {
                 opacity: 1;
                 transform: translateY(-5px) translateX(5px) rotate(15deg);
             }
-            80%{
+
+            80% {
                 opacity: 1;
                 transform: translateY(-10px) translateX(0px) rotate(0deg);
             }
-            85%{
+
+            85% {
                 opacity: 1;
                 transform: translateY(0px) translateX(-5px) rotate(-15deg);
             }
-            90%{
+
+            90% {
                 opacity: 1;
                 transform: translateY(-5px) translateX(0px) rotate(0deg);
             }
-            95%{
+
+            95% {
                 opacity: 1;
                 transform: translateY(0px) translateX(5px) rotate(15deg);
             }
-            100%{
+
+            100% {
                 opacity: 1;
                 transform: translateY(0px) translateX(0px) rotate(0deg);
             }
         }
-        .btn .button--yes:hover{
+
+        .btn .button--yes:hover {
             background-color: rgb(255, 1, 162);
             box-shadow: 2px 2px 5px rgb(255, 1, 162, 0.5);
+            left: 50%;
+            transform: translateX(-50%);
         }
-        #yes.active{
+
+        #yes.active {
             transform: translateX(600px);
         }
-        #yes{
+
+        #yes {
             transition: all 2s;
         }
-        .btn .button--no{
-            left: 700px;
+
+        .btn .button--no {
+            /* left: 700px; */
             position: absolute;
             padding: 10px 15px;
             background: rgb(38, 56, 255);
@@ -173,70 +223,87 @@
             border-radius: 5px;
             color: white;
             animation: no 2s linear;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        @keyframes no{
-            0%{
+
+        @keyframes no {
+            0% {
                 opacity: 0;
                 transform: translateY(-350px);
             }
-            50%{
+
+            50% {
                 opacity: 1;
                 transform: translateY(0px) translateX(-20px) rotate(-30deg);
             }
-            55%{
+
+            55% {
                 opacity: 1;
                 transform: translateY(-10px) translateX(-10px) rotate(-15deg);
             }
-            60%{
+
+            60% {
                 opacity: 1;
                 transform: translateY(-20px) translateX(0px) rotate(0deg);
             }
-            65%{
+
+            65% {
                 opacity: 1;
                 transform: translateY(-10px) translateX(10px) rotate(15deg);
             }
-            70%{
+
+            70% {
                 opacity: 1;
                 transform: translateY(0px) translateX(20px) rotate(30deg);
             }
-            75%{
+
+            75% {
                 opacity: 1;
                 transform: translateY(-5px) translateX(5px) rotate(15deg);
             }
-            80%{
+
+            80% {
                 opacity: 1;
                 transform: translateY(-10px) translateX(0px) rotate(0deg);
             }
-            85%{
+
+            85% {
                 opacity: 1;
                 transform: translateY(0px) translateX(-5px) rotate(-15deg);
             }
-            90%{
+
+            90% {
                 opacity: 1;
                 transform: translateY(-5px) translateX(0px) rotate(0deg);
             }
-            95%{
+
+            95% {
                 opacity: 1;
                 transform: translateY(0px) translateX(5px) rotate(15deg);
             }
-            100%{
+
+            100% {
                 opacity: 1;
                 transform: translateY(0px) translateX(0px) rotate(0deg);
             }
         }
-        #no.active{
+
+        #no.active {
             transform: translateX(100px);
         }
-        .box-mail{
+
+        .box-mail {
             position: relative;
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
         }
-        .mail{
+
+        .mail {
             position: absolute;
-            width: 45%;
+            width: 90%;
             height: auto;
             flex-direction: column;
             text-align: center;
@@ -245,37 +312,44 @@
             display: flex;
             gap: 10px;
             border-radius: 10px;
-            transform: translateY(-350px);
+            transform: translateY(-50%);
             transition: transform 2s;
-            box-shadow: -5px -5px 10px rgba(255,255,255, 0.8),
-                    5px 5px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8),
+                5px 5px 10px rgba(0, 0, 0, 0.5);
         }
-        .mail .image{
+
+        .mail .image {
             position: relative;
             width: 200px;
             left: 50%;
             transform: translateX(-50%);
         }
-        .mail .image img{
+
+        .mail .image img {
             width: 100%;
         }
-        .mail.active{
+
+        .mail.active {
             transform: translateY(130px);
         }
-        .mail h1{
+
+        .mail h1 {
             font-family: 'Ms Madi', cursive;
             font-size: 2em;
         }
-        .mail h1 i{
+
+        .mail h1 i {
             color: red;
             padding: 0px 20px;
         }
-        .mail p{
+
+        .mail p {
             font-family: 'Dancing Script', cursive;
             font-size: 1.2em;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="toast">
@@ -295,7 +369,8 @@
     </div>
     <div class="box-mail">
         <div class="mail">
-            <h1><i class="fa-solid fa-heart"></i>Bất ngờ chưa bé .Mừng ngày quốc tế phụ nữ 20/10. Tuy hơi muộn nhưng đây là bất ngờ. Thích không nèee. <i class="fa-solid fa-heart"></i></h1>
+            <h1><i class="fa-solid fa-heart"></i>Bất ngờ chưa bé .Mừng ngày quốc tế phụ nữ 20/10. Tuy hơi muộn nhưng đây
+                là bất ngờ. Thích không nèee. <i class="fa-solid fa-heart"></i></h1>
             <div class="image">
                 <img src="Picture1.png" alt="">
             </div>
@@ -303,4 +378,5 @@
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
