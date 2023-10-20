@@ -14,7 +14,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap');
-        @media (max-width: 767px) {
+        /* CSS chung cho các màn hình */
+        /* các thẻ CSS khác ở đây */
+
+        /* Thiết lập giao diện cho màn hình điện thoại di động */
+        @media only screen and (max-width: 767px) {
             .toast .toast-container {
                 flex-direction: column;
                 align-items: center;
@@ -38,27 +42,21 @@
 
             .mail {
                 width: 90%;
-                /* Đặt chiều rộng của .mail thành 90% để nó nhỏ lại */
-                max-width: 300px;
-                /* Đặt giá trị tối đa cho chiều rộng nếu màn hình nhỏ hơn */
+                max-width: 400px;
                 margin-top: 20px;
-                /* Tăng khoảng cách từ trên xuống */
                 padding: 10px;
-                /* Thêm padding để tạo khoảng trắng xung quanh nội dung */
                 text-align: center;
-                /* Căn giữa văn bản */
             }
 
             .mail h1 {
                 font-size: 1.2em;
-                /* Giảm kích thước font chữ */
             }
 
             .mail .image img {
                 width: 100%;
-                /* Đảm bảo hình ảnh bên trong .image giữ kích thước tương ứng */
             }
         }
+
 
         * {
             margin: 0;
