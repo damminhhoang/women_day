@@ -11,13 +11,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Úuuuu òaaaaaa</title>
     <style>
-        /* Thiết lập giao diện cho màn hình máy tính */
-        @media (min-width: 768px) {
-            /* Đặt các thuộc tính CSS cho giao diện máy tính ở đây */
-        }
-
-        /* Thiết lập giao diện cho màn hình điện thoại di động */
-        /* Thiết lập giao diện cho màn hình điện thoại di động */
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap');
         @media (max-width: 767px) {
             .toast .toast-container {
                 flex-direction: column;
@@ -64,10 +60,6 @@
             }
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap');
-
         * {
             margin: 0;
             padding: 0;
@@ -97,8 +89,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-top: 30%;
-            gap: 70px;
+            margin-top: 10%;
+            gap: 10px;
         }
 
         .toast .toast-container.active {
@@ -168,7 +160,7 @@
         }
 
         .btn .button--yes {
-            right: 40%;
+            left: 400px;
             position: absolute;
             padding: 10px 20px;
             background: rgb(250, 68, 68);
@@ -177,7 +169,6 @@
             cursor: pointer;
             color: white;
             animation: yes 2s linear;
-            transform: translateX(-50%);
         }
 
         @keyframes yes {
@@ -245,8 +236,6 @@
         .btn .button--yes:hover {
             background-color: rgb(255, 1, 162);
             box-shadow: 2px 2px 5px rgb(255, 1, 162, 0.5);
-            left: 50%;
-            transform: translateX(-50%);
         }
 
         #yes.active {
@@ -258,7 +247,7 @@
         }
 
         .btn .button--no {
-            /* left: 700px; */
+            left: 700px;
             position: absolute;
             padding: 10px 15px;
             background: rgb(38, 56, 255);
@@ -266,8 +255,6 @@
             border-radius: 5px;
             color: white;
             animation: no 2s linear;
-            left: 40%;
-            transform: translateX(-50%);
         }
 
         @keyframes no {
@@ -346,7 +333,7 @@
 
         .mail {
             position: absolute;
-            width: 90%;
+            width: 45%;
             height: auto;
             flex-direction: column;
             text-align: center;
@@ -355,7 +342,7 @@
             display: flex;
             gap: 10px;
             border-radius: 10px;
-            transform: translateY(-50%);
+            transform: translateY(-350px);
             transition: transform 2s;
             box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8),
                 5px 5px 10px rgba(0, 0, 0, 0.5);
