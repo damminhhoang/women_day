@@ -17,8 +17,28 @@
         }
 
         /* Thiết lập giao diện cho màn hình điện thoại di động */
+        /* Thiết lập giao diện cho màn hình điện thoại di động */
         @media (max-width: 767px) {
-            /* Đặt các thuộc tính CSS cho giao diện điện thoại di động ở đây */
+            .toast .toast-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                margin-top: 20px;
+                display: flex;
+                gap: 10px;
+            }
+
+            .btn .button--yes,
+            .btn .button--no {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                color: white;
+                animation: yes 2s linear;
+            }
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -299,7 +319,6 @@
             height: 100%;
             display: flex;
             justify-content: center;
-            margin-top: 30%;
         }
 
         .mail {
