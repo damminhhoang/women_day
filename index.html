@@ -40,59 +40,22 @@
                 animation: yes 2s linear;
             }
 
-            .box-mail {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-            }
-
             .mail {
-                position: absolute;
-                width: 45%;
-                height: auto;
-                flex-direction: column;
+                width: 90%;
+                max-width: 400px;
+                margin-top: 20px;
+                padding: 10px;
                 text-align: center;
-                background-color: rgb(248, 166, 166);
-                padding: 15px 20px;
-                display: flex;
-                gap: 10px;
-                border-radius: 10px;
-                transform: translateY(-350px);
-                transition: transform 2s;
-                box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8),
-                    5px 5px 10px rgba(0, 0, 0, 0.5);
+                position: relative;
+                z-index: 1;
             }
 
-            .mail .image {
-                position: relative;
-                width: 200px;
-                left: 50%;
-                transform: translateX(-50%);
+            .mail h1 {
+                font-size: 1.2em;
             }
 
             .mail .image img {
                 width: 100%;
-            }
-
-            .mail.active {
-                transform: translateY(130px);
-            }
-
-            .mail h1 {
-                font-family: 'Ms Madi', cursive;
-                font-size: 2em;
-            }
-
-            .mail h1 i {
-                color: red;
-                padding: 0px 20px;
-            }
-
-            .mail p {
-                font-family: 'Dancing Script', cursive;
-                font-size: 1.2em;
             }
         }
 
@@ -419,8 +382,8 @@
 
 <body>
     <div class="container">
-        <div class="toast">
-            <div class="toast-container">
+        <div class="toast" >
+            <div class="toast-container" style="margin-top: 35%;">
                 <div class="text1">
                     <h1>QUỐC TẾ PHỤ NỮ 20/11</h1>
                 </div>
